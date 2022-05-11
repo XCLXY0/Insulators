@@ -1,48 +1,57 @@
 ## Introduction
-
-### 基于关键点关联域的绝缘子定向检测方法——推理代码
+Status: Archive (code is provided as-is, no updates expected)
+### Inference code
+Code for reproducing results in the paper __Detecting insulator strings as linked chain framework in smart grid inspection__ by Ning Wei, Xiangyang Li, Jiaqi Jin, Peng Chen, Shuifa Sun.
 
 ## Network Architecture
-
-![pipeline](https://github.com/XCLXY0/Insulator/blob/master/pipeline.png)
+![pipeline](https://github.com/XCLXY0/Insulators/blob/master/pipeline.png)
 
 ## Results
 <p align="center">
-<img src="https://github.com/XCLXY0/Insulator/blob/master/result/000020.jpg", width="720">
+<img src="https://github.com/XCLXY0/Insulators/blob/master/result/000020.jpg", width="720">
 </p>
 <p align="center">
-<img src="https://github.com/XCLXY0/Insulator/blob/master/result/000252.jpg", width="720">
+<img src="https://github.com/XCLXY0/Insulators/blob/master/result/000252.jpg", width="720">
 </p>
 <p align="center">
-<img src="https://github.com/XCLXY0/Insulator/blob/master/result/001246.jpg", width="720">
+<img src="https://github.com/XCLXY0/Insulators/blob/master/result/001246.jpg", width="720">
 </p>
 
-###### 更多测试结果见下方百度网盘链接
+###### For more test results, see the link below.
 
 ## Require
-- 第三方Python包详见[requirement.txt](https://github.com/XCLXY0/Insulator/blob/master/requirement.txt)
+Please `pip install` the following packages:
+-Cython
+-torch>=1.5
+-torchvision>=0.6.1
+-progress
+-matplotlib
+-scipy
+-numpy
+-opencv
 
 ## Development Environment
-- 使用pytorch 3.6 在Ubuntu 18.04系统上运行，显存8G
+
+Running on Ubuntu 18.04 system with pytorch 3.6, 8G VRAM.
 
 ## Inference
-### step 1: 安装 [requirement.txt](https://github.com/XCLXY0/Insulator/blob/master/requirement.txt) 中的Python包
+### step 1: Install Python packages in [requirement.txt](https://github.com/XCLXY0/Insulators/blob/master/requirement.txt) .
 
-### step 2: 下载权重 `model/Ours/paf_800X800_6000_80_14_8_SGD_0.1.pth` 到根目录
+### step 2: Download the weight `model/Ours/paf_800X800_6000_80_14_8_SGD_0.1.pth` to the root directory.
 
-  - 模型权重及测试结果下载链接：[af9p](https://pan.baidu.com/s/1coFL9CIx0wu7twu5fD9gog)
+  -Model weights and test results download link：[af9p](https://pan.baidu.com/s/1coFL9CIx0wu7twu5fD9gog).
 
-### step 3: 运行以下代码测试图片
+### step 3: Run the following code to test the image.
   `python inference.py --image [image_path]`
-- 如：
+- for example:
   `python inference.py --image ./picture/000033.JPG`
-- 测试结果：
+- Test results：
 
-![test](https://github.com/XCLXY0/Insulator/blob/master/test_result.png)
+![test](https://github.com/XCLXY0/Insulators/blob/master/test_result.png)
 
-![000033](https://github.com/XCLXY0/Insulator/blob/master/result/000033.jpg)
+![000033](https://github.com/XCLXY0/Insulators/blob/master/result/000033.jpg)
 
-__注意： 本模型测试图片像素约为`5400px X 3600px`__
+__Note: The pixels of the test image of this model are approximately `5400 px X 3600 px`__.
 
 ## Results
 | model | AP | AP<sup>50</sup> | AP<sup>75</sup> |
@@ -53,5 +62,5 @@ __注意： 本模型测试图片像素约为`5400px X 3600px`__
 |[R<sup>3</sup>Det](https://arxiv.org/abs/1908.05612)   | 0.723 |0.897 |0.731 |
 |Ours   | 0.757 |0.895 |0.789 |
 
-- 注意：RetinaNet, CenterNet, CentripetalNet, R3Det均在[mmdetection](https://github.com/open-mmlab/mmdetection)上复现成功, 若要评估、测试这些模型需在[mmdetection](https://github.com/open-mmlab/mmdetection)上运行
-- 此外，RetinaNet, CenterNet, CentripetalNet, R3Det等模型权重及结果见：[af9p](https://pan.baidu.com/s/1coFL9CIx0wu7twu5fD9gog)
+- Note：`RetinaNet, CenterNet, CentripetalNet, R<sup>3</sup>Det` is successfully debugged on [mmdetection](https://github.com/open-mmlab/mmdetection), to evaluate and test these models need to be on [mmdetection](https://github.com/open-mmlab/mmdetection).
+- Moreover，`RetinaNet, CenterNet, CentripetalNet, R<sup>3</sup>Det` model weights and results see：[af9p](https://pan.baidu.com/s/1coFL9CIx0wu7twu5fD9gog)
