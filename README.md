@@ -39,11 +39,12 @@ Running on Ubuntu 18.04 system with pytorch 3.6, 8G VRAM.
 
 ### step 2: Download the weight `model/Ours/paf_800X800_6000_80_14_8_SGD_0.1.pth` to the root directory.
 
-  -Model weights and test results download link：[af9p](https://pan.baidu.com/s/1coFL9CIx0wu7twu5fD9gog).
+- Model weights and test results download link：[af9p](https://pan.baidu.com/s/1coFL9CIx0wu7twu5fD9gog).
 
 ### step 3: Run the following code to test the image.
   `python inference.py --image [image_path]`
 - for example:
+
   `python inference.py --image ./picture/000033.JPG`
 - Test results：
 
