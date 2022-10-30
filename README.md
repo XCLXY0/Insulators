@@ -1,7 +1,7 @@
 ## Introduction
 Status: Archive (code is provided as-is, no updates expected)
 ### Inference code
-Code for reproducing results in the paper __Detecting insulator strings as linked chain framework in smart grid inspection__ by Ning Wei, Xiangyang Li, Jiaqi Jin, Peng Chen, Shuifa Sun.
+Code for reproducing results in the paper __Detecting insulator strings as linked chain framework in smart grid inspection.
 
 ## Network Architecture
 ![pipeline](https://github.com/XCLXY0/Insulators/blob/master/pipeline.png)
