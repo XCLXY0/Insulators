@@ -1,7 +1,7 @@
 ## Introduction
 Status: Archive (code is provided as-is, no updates expected)
 ### Inference code
-Code for reproducing results in the paper __Detecting insulator strings as linked chain framework in smart grid inspection.
+Code for reproducing results in the paper __Detecting insulator strings as linked chain framework in smart grid inspection__.
 
 ## Network Architecture
 ![pipeline](https://github.com/XCLXY0/Insulators/blob/master/pipeline.png)
@@ -41,7 +41,7 @@ Running on Ubuntu 18.04 system with pytorch 3.6, 8G VRAM.
 
 - Model weights and test results download link：[af9p](https://pan.baidu.com/s/1coFL9CIx0wu7twu5fD9gog).
 
-### step 3: Run the following code to test the image.
+### step 3: Run the following script to obtain detection results in the testing image.
   `python inference.py --image [image_path]`
 - for example:
 
