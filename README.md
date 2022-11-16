@@ -17,7 +17,7 @@ Code for reproducing results in the paper __Detecting insulator strings as linke
 <img src="https://github.com/XCLXY0/Insulators/blob/master/result/001246.jpg", width="720">
 </p>
 
-###### For more test results, see the link below.
+###### For more test results, see the link below [af9p](https://pan.baidu.com/s/1coFL9CIx0wu7twu5fD9gog).
 
 ## Require
 Please `pip install` the following packages:
@@ -63,5 +63,5 @@ __Note: The testing images are all shot by UAV with the resolution of `5400x5400
 |[R<sup>3</sup>Det](https://arxiv.org/abs/1908.05612)   | 0.723 |0.897 |0.731 |
 |Ours   | 0.757 |0.895 |0.789 |
 
-- Note：__RetinaNet, CenterNet, CentripetalNet, R<sup>3</sup>Det__ is successfully debugged on [mmdetection](https://github.com/open-mmlab/mmdetection), to evaluate and test these models need to be on [mmdetection](https://github.com/open-mmlab/mmdetection).
-- Moreover，__RetinaNet, CenterNet, CentripetalNet, R<sup>3</sup>Det__ model weights and results see：[af9p](https://pan.baidu.com/s/1coFL9CIx0wu7twu5fD9gog)
+- Note：__RetinaNet, CenterNet, CentripetalNet, R<sup>3</sup>Det__ has been successfully debugged on [mmdetection](https://github.com/open-mmlab/mmdetection).  [mmdetection](https://github.com/open-mmlab/mmdetection) package need to be setup if you want to evaluate all these methods.
+- Moreover，for the model weights and results of __RetinaNet, CenterNet, CentripetalNet, R<sup>3</sup>Det__ can refer to link：[af9p](https://pan.baidu.com/s/1coFL9CIx0wu7twu5fD9gog)
