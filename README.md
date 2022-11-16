@@ -17,7 +17,6 @@ Code for reproducing results in the paper __Detecting insulator strings as linke
 <img src="https://github.com/XCLXY0/Insulators/blob/master/result/001246.jpg", width="720">
 </p>
 
-###### For more test results, see the link below [af9p](https://pan.baidu.com/s/1coFL9CIx0wu7twu5fD9gog).
 
 ## Require
 Please `pip install` the following packages:
