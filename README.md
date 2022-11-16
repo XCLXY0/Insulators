@@ -52,7 +52,7 @@ Running on Ubuntu 18.04 system with pytorch 3.6, 8G VRAM.
 
 ![000033](https://github.com/XCLXY0/Insulators/blob/master/result/000033.jpg)
 
-__Note: The pixels of the test image of this model are approximately `5400 px X 3600 px`__.
+__Note: The testing images are all shot by UAV with the resolution of `5400x5400`. It is strongly suggest that your own testing data is prepared in similar resolution and views.__
 
 ## Results
 | model | AP | AP<sub>50</sub> | AP<sub>75</sub> |
